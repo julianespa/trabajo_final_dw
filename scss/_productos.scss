@@ -1,0 +1,57 @@
+/* productos */
+.productosEncabezado {
+    text-align: justify;
+    margin: 20px ;
+    color: #fff;
+    letter-spacing: 1px;
+}
+.productosEncabezado  h2 {
+    text-decoration: underline;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+}
+.productosCartas .prodCarta {
+    width: 300px;
+    height: 320px;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: #537895;
+    background-image: linear-gradient(315deg, #537895 0%, #09203f 74%);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    transition: .3s;
+    box-shadow: 2px 2px 5px 1px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);;
+}
+.prodCarta button {
+    text-decoration: none;
+    color: white;
+    background-color: #0abcf9;
+    background-image: linear-gradient(315deg, #0abcf9 0%, #2c69d1 74%);
+    padding: 5px 25px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+.productosCartas .prodCarta:hover {
+    transform: scale(1.05)
+}
+.productosCartas div h3 {
+    text-transform: capitalize;
+    color:#fff;
+    font-weight: 300;
+    font-size:1.5em;
+}
+.productosCartas img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.productosCartas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}

@@ -1,0 +1,36 @@
+/* mobile */
+@media (max-width: 500px) {
+    /*  footer */
+    footer {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: 100%;
+        align-items:center;
+        justify-content: center;
+    }
+    .footerDatos {
+        flex-direction: column;
+    }
+    /* nosotros */
+    .nosotrosVideo {
+        width: 80%;
+        margin: 10%;
+    }
+    .nosotrosVideo video {
+        width: 100%;  
+    }
+    .nosotrosTextoVideo {
+        width: 90%;
+        text-align: justify;
+        margin: 0
+    }
+    .nosotrosHistoria {
+        margin: 10px
+    }
+    /* beneficios */
+    .beneficiosEncabezado p {
+        margin: 10px;
+    }
+}
+/* final mobile */
+
