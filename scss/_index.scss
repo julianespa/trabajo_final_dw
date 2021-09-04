@@ -1,4 +1,3 @@
-/* index */
 /* carousel */
 .carousel-caption1{
     position: absolute;
@@ -28,103 +27,113 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    .card {
+        position: relative;
+        width: 340px;
+        height: 450px;
+        background-color: #537895;
+        background-image: linear-gradient(315deg, #537895 0%, #09203f 74%);
+        border-radius: 20px;
+        overflow: hidden;
+        margin: 20px 0px;
+        box-shadow: 1px 1px 5px 1px;
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+        border-left: 1px solid rgba(255, 255, 255, 0.5);
+        .circle {
+            position:absolute;
+            top:-250px;
+            left: 50%;
+            transform: translatex(-50%);
+            width: 500px;
+            height: 500px;
+            background: #333;
+            clip-path: circle();
+            .imgBx {
+                position: absolute;
+                left:50%;
+                transform: translateX(-50%);
+                bottom:0px;
+                width: 340px;
+                height: 310px;
+                background: rgb(0, 0, 0);
+                img {
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: -80px;
+                    transition: 0.5s;
+                    transform-origin: center;
+                }
+            }
+            .imgBx:hover img {
+                transform: scale(1.5);
+            }
+        }
+        .circle::before {
+            content: "";
+            position: absolute;
+            top:-8px;
+            left:-16px;
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            box-shadow: 0 0 0 20px rgba(28, 32, 223, 0.5);
+            border-radius: 50%;
+            z-index: 1000;
+            pointer-events: none;
+        }
+        .content  {
+            position:absolute;
+            left: 0;
+            bottom: 10%;
+            width: 100%;
+            height: 140px;
+            padding: 1px 30px;
+            h3 {
+                font-size: 1.4rem;
+                color: #fff;
+                margin-top: 7px;
+                text-align: center;
+            }
+            .textIcon {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                color:rgb(209, 209, 209);
+                p {
+                    font-weight: 200;
+                    text-align: center;
+                    letter-spacing: 1px;
+                }
+                a {
+                    text-decoration: none;
+                    color: white;
+                    background-color: #0abcf9;
+                    background-image: $colorBtn;
+                    padding: 5px 25px;
+                    border-radius: 20px;
+                    transition: 0.3s;
+                }
+                a:hover {
+                    transform: scale(1.1)
+                } 
+            }
+        }
+    }
 }
-.card {
-    position: relative;
-    width: 340px;
-    height: 450px;
-    background-color: #537895;
-    background-image: linear-gradient(315deg, #537895 0%, #09203f 74%);
-    border-radius: 20px;
-    overflow: hidden;
-    margin: 20px 0px;
-    box-shadow: 1px 1px 5px 1px;
-    border-top: 1px solid rgba(255, 255, 255, 0.5);
-    border-left: 1px solid rgba(255, 255, 255, 0.5);
-}
-.circle {
-    position:absolute;
-    top:-250px;
-    left: 50%;
-    transform: translatex(-50%);
-    width: 500px;
-    height: 500px;
-    background: #333;
-    clip-path: circle();
-}
-.circle::before {
-    content: "";
-    position: absolute;
-    top:-8px;
-    left:-16px;
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    box-shadow: 0 0 0 20px rgba(28, 32, 223, 0.5);
-    border-radius: 50%;
-    z-index: 1000;
-    pointer-events: none;
-}
-.circle .imgBx {
-    position: absolute;
-    left:50%;
-    transform: translateX(-50%);
-    bottom:0px;
-    width: 340px;
-    height: 310px;
-    background: rgb(0, 0, 0);
-}
-.circle .imgBx img {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: -80px;
-    transition: 0.5s;
-    transform-origin: center;
-}
-.circle .imgBx:hover img {
-    transform: scale(1.5);
-}
-.content  {
-    position:absolute;
-    left: 0;
-    bottom: 10%;
-    width: 100%;
-    height: 140px;
-    padding: 1px 30px;
-}
-.content h3 {
-    font-size: 1.4rem;
-    color: #fff;
-    margin-top: 7px;
-    text-align: center;
-}
-.content .textIcon {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    color:rgb(209, 209, 209);
-    
-}
-.textIcon p {
-    font-weight: 200;
-    text-align: center;
-    letter-spacing: 1px;
-}
-.textIcon a {
-text-decoration: none;
-color: white;
-background-color: #0abcf9;
-background-image: linear-gradient(315deg, #0abcf9 0%, #2c69d1 74%);
-padding: 5px 25px;
-border-radius: 20px;
-transition: 0.3s;
-}
-.textIcon a:hover {
-    transform: scale(1.1)
-} 
-/* fin index */
+
+
+
+
+
+
+
+
+
+
+
+

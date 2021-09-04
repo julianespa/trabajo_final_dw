@@ -1,17 +1,20 @@
-/* nosotros */
 h2 {
-    text-decoration: underline;
+    text-decoration: none;
     margin: 20px;
     margin-bottom: 5px;
     color: #fff;
+    font-weight: 300;
 }
 .nosotrosHistoria, .nosotrosTextoVideo {
     margin-left: 20px;
+    padding: 0 20px 0 0;
     text-align: justify;
     letter-spacing: 1px;
     color: #fff;
+    font-weight: 200;
 }
 .nosotrosVideo {
+    min-height:350px;
     border: 1px solid;
     border-radius: 20px;
     margin: 5% 15% ;
@@ -27,14 +30,10 @@ h2 {
     border-left: 1px solid rgba(255, 255, 255, 0.5);
     box-shadow: 2px 2px 5px 1px;
 }
-
-
 .nosotrosVideo video {
     border-radius: 10px;
     width: 500px;  
 }
 .nosotrosTextoVideo {
     width: 40%;
-    font-weight: 200;
 }
-/* final nosotros */
