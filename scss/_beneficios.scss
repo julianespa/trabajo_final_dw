@@ -1,0 +1,95 @@
+/* beneficios */
+.beneficiosEncabezado p {
+    margin:20px;
+    text-align: justify;
+    color: #fff;
+    letter-spacing: 1px;
+    }
+    .beneficiosEncabezado  h2 {
+        text-decoration: underline;
+        margin-bottom: 5px;
+        text-transform: capitalize;
+        color: #fff;    
+    }
+    .beneficiosCentro {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+    .beneficiosTabla{
+        border: 1px solid black;
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+        border-left: 1px solid rgba(255, 255, 255, 0.5);
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 2px 2px 5px 1px;
+        transition: 0.3s;
+    }
+    .beneficiosTabla:hover, .beneficiosPromos div:hover {
+        transform: scale(1.2);
+    }
+    .beneficiosTabla table td {
+        padding: 10px 20px;
+    
+    }
+    .beneficiosPromos {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    .beneficiosPromos div {
+        width:200px;
+        height: 250px;
+        border-radius: 10px;
+        margin: 20px;
+        background-color: #537895;
+        background-image: linear-gradient(315deg, #537895 0%, #09203f 74%);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+        border-left: 1px solid rgba(255, 255, 255, 0.5);
+        box-shadow: 2px 2px 5px 1px;
+        transition: 0.3s;
+    }
+    .beneficiosPromos div ul {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-transform: lowercase;
+        color: azure;
+        list-style: none;
+        padding: 0;
+    }
+    .beneficiosPromos h3 {
+        text-transform: uppercase;
+        text-decoration: overline;
+        padding-top: 10px;
+        color: #fff
+    }
+    .beneficiosPromos h4 {
+        text-transform: capitalize;
+        text-decoration: none;
+        color: white;
+        background-color: #0abcf9;
+        background-image: linear-gradient(315deg, #0abcf9 0%, #2c69d1 74%);
+        padding: 5px 25px;
+        border-radius: 20px;
+    }
+    #benefTablaHead td {
+        background-color: #537895;
+        background-image: linear-gradient(315deg, #537895 0%, #09203f 74%);
+        text-decoration: underline;
+        text-transform: uppercase;  
+        color: #fff;
+    }
+    .beneficiosMain {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-grow: 1;
+        
+    }
+    /* final beneficios */
