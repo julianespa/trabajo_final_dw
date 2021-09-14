@@ -23,10 +23,12 @@ footer {
             margin: 0;  
         }
     }
-    .facebook {
-        width: 35px;
-        margin: 15px;
-        border-radius: 50%;
-        background: #fff;
+    .footerRedes { 
+        margin-right: 20px;
+        .redesIcono {
+            color: #fff;
+            font-size: 1.8em;
+            margin:0 10px;
     }
+ }
 }

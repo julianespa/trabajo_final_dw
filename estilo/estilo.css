@@ -42,11 +42,12 @@ footer {
       margin: 0; }
     footer .footerDatos p {
       margin: 0; }
-  footer .facebook {
-    width: 35px;
-    margin: 15px;
-    border-radius: 50%;
-    background: #fff; }
+  footer .footerRedes {
+    margin-right: 20px; }
+    footer .footerRedes .redesIcono {
+      color: #fff;
+      font-size: 1.8em;
+      margin: 0 10px; }
 
 /* carousel */
 .carousel-caption1 {
